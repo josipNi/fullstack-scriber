@@ -9,7 +9,6 @@ router.get('/suggest/tracks', async (request, response) => {
     if (!prefix) {
         return response.status(400).json({ errors: ['Missing prefix'] });
     }
-
     const suggestions = await getSuggestionsForType('tracks', prefix, numberOfSuggestedEntries);
     return response.json({ suggestions });
 });
@@ -19,7 +18,6 @@ router.get('/suggest/artists', async (request, response) => {
     if (!prefix) {
         return response.status(400).json({ errors: ['Missing prefix'] });
     }
-
     const suggestions = await getSuggestionsForType('artists', prefix, numberOfSuggestedEntries);
     return response.json({ suggestions });
 });
