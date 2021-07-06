@@ -1,0 +1,14 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "Tests autosuggest service",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha index.js"
+  },
+  "author": "Maven",
+  "dependencies": {
+    "chakram": "^1.5.0",
+    "mocha": "^7.0.1"
+  }
+}
